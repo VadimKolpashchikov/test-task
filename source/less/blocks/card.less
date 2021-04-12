@@ -1,0 +1,79 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 379px;
+  height: 100%;
+  background-color: @card-background;
+  border: 1px solid @border;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 4px 20px @hover-shadow;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 227px;
+    background: url('https://via.placeholder.com/300x150/FF0000/FFFFFF?text=title') -60px -1px no-repeat;
+    background-size: 564px 233px;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    padding: 20px 20px 17px;
+  }
+
+  &__text-name {
+    margin: 0 0 2px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &__text-address {
+    margin: 0 0 15px;
+  }
+
+  &__text-price {
+    margin: 0 0 7px;
+  }
+
+  &__text-price_number {
+    font-weight: bold;
+  }
+
+  &__text-ownership {
+    margin: 0;
+  }
+
+  &__text_info-living {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    padding: 8px 8px 5px;
+    min-width: 134px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: @information-rectangle-text;
+    box-sizing: border-box;
+  }
+
+  &__text_bright-theme {
+    background: @information-rectangle-background-bright;
+  }
+
+  &__text_dark-theme {
+    background: @information-rectangle-background-dark;
+  }
+}

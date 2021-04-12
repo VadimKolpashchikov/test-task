@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Homepage</title>
+</head>
+<body class="page__body">
+  <section class="homepage">
+    <h1 class="homepage__title">Our Latest Developments</h1>
+    <label class="homepage__filter filter">
+      Filter
+      <input class="filter__input" type="text">
+    </label>
+    <div class="homepage__cards-wrapper">
+
+    </div>
+    <button type="button" class="homepage__button button">
+      See more
+      <svg class="homepage__button-icon" width="7" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l4.043 7.41667L1 15.8333" stroke="#363636" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </section>
+
+  <template id="homepage__card">
+    <a href="#" class="homepage__card-link">
+      <article class="homepage__card card">
+        <div class="card__img-wrapper" aria-label="building image"></div>
+        <div class="card__text-wrapper">
+          <h3 class="card__text-name">Brunlees Court</h3>
+          <p class="card__text-address">19-23 Cambridge Road, Southport</p>
+          <p class="card__text-price">
+            New Properties for Sale from
+            <span class="card__text-price_number">£214,999</span>
+          </p>
+          <p class="card__text-ownership">Shared Ownership Available</p>
+          <span class="card__text_info-living">Independent living</span>
+        </div>
+      </article>
+    </a>
+  </template>
+</body>
+</html>

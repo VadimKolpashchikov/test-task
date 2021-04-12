@@ -1,0 +1,28 @@
+.filter {
+
+  &__input {
+    width: 418px;
+    height: 50px;
+    padding: 10px 30px;
+    margin-left: 15px;
+    border: 1px solid @border;
+    box-sizing: border-box;
+    border-radius: 25px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border-color: @active-element;
+      box-shadow: 0 4px 20px @hover-shadow;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .filter {
+
+    &__input {
+      width: 100%;
+    }
+  }
+}
